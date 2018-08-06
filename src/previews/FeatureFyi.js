@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {AnimateChildren} from '../animate-children';
 
 const Container = styled.div`
 	height: 90px;
@@ -52,6 +53,27 @@ const Input = styled.div`
 	border: 1px solid rgba(0, 0, 0, 0.1);
 `;
 
+const Tags = styled.div`
+	width: 50%;
+	height: 10%;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	text-align: center;
+	margin-top: -6px;
+`;
+
+const Tag = styled.div`
+	height: 3px;
+	width: 10px;
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 2px;
+	background: #666;
+`;
+
 export default () => {
 	return (
 		<div style={{perspective: 500}}>
@@ -59,14 +81,24 @@ export default () => {
 				<Lower>
 					<Title>×</Title>
 					<FigureContainer>
-						<Figure>
-							<Input />
-						</Figure>
-						<div style={{width: 4}} />
-						<Figure>
-							<Input />
-						</Figure>
+						<AnimateChildren>
+							<Figure>
+								<Input />
+							</Figure>
+							<div style={{width: 4}} />
+							<Figure>
+								<Input />
+							</Figure>
+						</AnimateChildren>
 					</FigureContainer>
+					<Tags>
+						<AnimateChildren>
+							<Tag />
+							<Tag />
+							<Tag />
+							<Tag />
+						</AnimateChildren>
+					</Tags>
 				</Lower>
 			</Container>
 		</div>
