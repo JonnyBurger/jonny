@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {AnimateChildren} from '../animate-children';
 
 const Container = styled.div`
 	height: 90px;
@@ -9,6 +10,7 @@ const Container = styled.div`
 	transform: rotateY(10deg);
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 	flex-direction: column;
+	overflow: hidden;
 `;
 
 const Header = styled.div`
@@ -63,15 +65,17 @@ export default () => {
 				<Header />
 				<Lower>
 					<LowerContent>
-						<Title />
-						<Subtitle />
-						<ContentLine />
-						<ContentLine />
-						<ContentLine />
-						<ContentLine />
-						<ContentLine />
-						<ContentLine />
-						<Figure />
+						<AnimateChildren>
+							<Title />
+							<Subtitle />
+							<ContentLine />
+							<ContentLine />
+							<ContentLine />
+							<ContentLine />
+							<ContentLine />
+							<ContentLine />
+							<Figure />
+						</AnimateChildren>
 					</LowerContent>
 				</Lower>
 			</Container>
