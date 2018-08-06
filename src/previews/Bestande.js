@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {AnimateChildren} from '../animate-children';
 
 const Container = styled.div`
 	height: 120px;
@@ -9,6 +10,7 @@ const Container = styled.div`
 	transform: rotateY(10deg);
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 	flex-direction: column;
+	overflow: hidden;
 `;
 
 const Header = styled.div`
@@ -36,9 +38,11 @@ export default () => {
 			<Container>
 				<Header />
 				<Content>
-					<TimetablePanel style={{left: 30, top: 20}} />
-					<TimetablePanel style={{left: 10, top: 60}} />
-					<TimetablePanel style={{left: 40, top: 90}} />
+					<AnimateChildren>
+						<TimetablePanel style={{left: 30, top: 20}} />
+						<TimetablePanel style={{left: 10, top: 60}} />
+						<TimetablePanel style={{left: 40, top: 90}} />
+					</AnimateChildren>
 				</Content>
 			</Container>
 		</div>
