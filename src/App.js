@@ -63,7 +63,7 @@ const Freelance = styled.div`
 	text-align: center;
 	font-weight: bold;
 	font-family: Roboto Condensed;
-	padding: 8px;
+	padding: 8px 12px;
 	margin-bottom: 20px;
 `;
 
@@ -75,7 +75,7 @@ class App extends Component {
 					<Header>
 						<Heading>Jonny Burger</Heading>
 						<Subtitle>Zurich Switzerland</Subtitle>
-						<Freelance>Available for Work - starting September 2018</Freelance>
+						<Freelance>Available for Work - starting September '18</Freelance>
 					</Header>
 					<Icons>
 						<SocialIcon
