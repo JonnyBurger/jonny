@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
+import {AnimateChildren} from '../animate-children';
 
 const Container = styled.div`
 	height: 60px;
@@ -65,9 +66,9 @@ const Band = styled.div`
 	display: inline-block;
 `;
 
-const Header = () => {
+const Header = ({style = {}, ...props}) => {
 	return (
-		<StrategyContainer style={{marginBottom: 5}}>
+		<StrategyContainer style={{...style, marginBottom: 5}} {...props}>
 			<Triangle>$</Triangle>
 			<Band />
 			<Band
@@ -81,9 +82,9 @@ const Header = () => {
 	);
 };
 
-const Strategy = () => {
+const Strategy = props => {
 	return (
-		<StrategyContainer>
+		<StrategyContainer {...props}>
 			<Circle />
 			<Space />
 			<Size />
@@ -96,13 +97,15 @@ export default () => {
 	return (
 		<div style={{perspective: 500}}>
 			<Container>
-				<Header />
-				<Strategy />
-				<Strategy />
-				<Strategy />
-				<Strategy />
-				<Strategy />
-				<Strategy />
+				<AnimateChildren>
+					<Header />
+					<Strategy />
+					<Strategy />
+					<Strategy />
+					<Strategy />
+					<Strategy />
+					<Strategy />
+				</AnimateChildren>
 			</Container>
 		</div>
 	);
