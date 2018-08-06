@@ -8,7 +8,7 @@ const Container = styled.div`
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	height: 70vh;
+	height: 50vh;
 	width: 100%;
 `;
 
@@ -57,14 +57,23 @@ const Description = styled.p`
 	line-height: 32px;
 `;
 
-const Freelance = styled.div`
+const Freelance = styled.a`
+	display: inline-block;
 	border: 1px solid black;
 	text-transform: uppercase;
 	text-align: center;
 	font-weight: bold;
 	font-family: Roboto Condensed;
 	padding: 8px 12px;
-	margin-bottom: 20px;
+	margin-bottom: 150px;
+	transition: background-color 0.3s, color 0.3s;
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+	&:hover {
+		background: black;
+		color: white;
+	}
 `;
 
 class App extends Component {
@@ -75,7 +84,6 @@ class App extends Component {
 					<Header>
 						<Heading>Jonny Burger</Heading>
 						<Subtitle>Zurich Switzerland</Subtitle>
-						<Freelance>Available for Work - starting September '18</Freelance>
 					</Header>
 					<Icons>
 						<SocialIcon
@@ -100,6 +108,12 @@ class App extends Component {
 						/>
 					</Icons>
 				</Container>
+				<div style={{width: 500, textAlign: 'center', margin: 'auto'}}>
+					<Freelance href="mailto:hi@jonny.io">
+						Available for Freelance - starting September '18
+					</Freelance>
+				</div>
+
 				<Description>
 					I'm a self-taught Javascript developer with 7 years of experience
 					building apps that people actually end up using.<br />
