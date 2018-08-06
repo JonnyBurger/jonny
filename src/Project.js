@@ -33,8 +33,8 @@ const Left = styled.div`
 
 const Right = styled.div`
 	display: block;
+	flex: 1;
 	${mobile`
-		flex: 1;
 		padding-left: 20px;
 		padding-right: 20px;
 	`};
