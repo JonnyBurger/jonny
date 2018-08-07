@@ -12,6 +12,7 @@ export default () => {
 			<Project
 				timeline="2016–"
 				title="Bestande"
+				link="https://bestande.ch"
 				feature={<Bestande />}
 				description="Student app for University of Zurich"
 				accomplishments={[
@@ -24,6 +25,7 @@ export default () => {
 			<Project
 				timeline="2015–2018"
 				title="ScienceMatters"
+				link="https://sciencematters.io"
 				feature={<ScienceMatters />}
 				description="Science publishing platform"
 				accomplishments={[
@@ -36,6 +38,7 @@ export default () => {
 			<Project
 				timeline="2013–2015"
 				title="onetune.fm"
+				link="https://onetune.fm"
 				feature={<Onetune />}
 				description="Music streaming website"
 				accomplishments={[
@@ -47,10 +50,11 @@ export default () => {
 			<Project
 				timeline="2018–"
 				title="make-space"
+				link="https://make-space.sh"
 				feature={<MakeSpace />}
 				description="Free up space on the command line"
 				accomplishments={[
-					'My flagship open source project',
+					'My upcoming flagship open source project',
 					'Developer-oriented tool for freeing up space',
 					'Downloads and runs with just one command'
 				]}
@@ -58,6 +62,7 @@ export default () => {
 			<Project
 				timeline="2018"
 				title="feature.fyi"
+				link="https://feature.fyi"
 				feature={<FeatureFyi />}
 				description="Music artist connection finder"
 				accomplishments={[

@@ -64,18 +64,29 @@ const Li = styled.li`
 	}
 `;
 
+const A = styled.a`
+	color: inherit;
+	text-decoration: none;
+	&:hover {
+		border-bottom: 1px solid;
+	}
+`;
+
 export default ({
 	timeline,
 	feature,
 	title,
 	description,
+	link,
 	accomplishments = []
 }) => {
 	return (
 		<Container>
 			<Left>{feature}</Left>
 			<Right>
-				<Title>{title}</Title>
+				<Title>
+					<A href={link}>{title}</A>
+				</Title>
 				<Description>
 					<span style={{width: 100, display: 'inline-block'}}>{timeline}</span>
 					{description} <span style={{width: 20, display: 'inline-block'}} />
