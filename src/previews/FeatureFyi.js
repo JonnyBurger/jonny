@@ -18,8 +18,6 @@ const Lower = styled.div`
 	flex-direction: column;
 `;
 
-const LowerContent = styled.div``;
-
 const Title = styled.div`
 	text-align: center;
 	height: 6%;
