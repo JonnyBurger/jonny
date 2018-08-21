@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import {SocialIcon} from 'react-social-icons';
 import Projects from './Projects';
+import {mobile} from './Project';
 
 const Container = styled.div`
 	display: flex;
@@ -66,6 +67,7 @@ const Freelance = styled.a`
 	font-family: Roboto Condensed;
 	padding: 8px 12px;
 	margin-bottom: 150px;
+	min-width: 300px;
 	transition: background-color 0.3s, color 0.3s;
 	cursor: pointer;
 	text-decoration: none;
@@ -74,6 +76,19 @@ const Freelance = styled.a`
 		background: black;
 		color: white;
 	}
+`;
+
+const MobileBreak = styled.div`
+	display: none;
+	${mobile`
+		display: block;
+	`};
+`;
+
+const MobileGray = styled.div`
+	font-size: 0.85em;
+	margin-top: 3px;
+	color: gray;
 `;
 
 class App extends Component {
@@ -108,15 +123,25 @@ class App extends Component {
 						/>
 					</Icons>
 				</Container>
-				<div style={{width: 500, textAlign: 'center', margin: 'auto'}}>
+				<div
+					style={{
+						maxWidth: 500,
+						textAlign: 'center',
+						margin: 'auto',
+						paddingLeft: 20,
+						paddingRight: 20
+					}}
+				>
 					<Freelance href="mailto:hi@jonny.io">
-						Available for Freelance - starting September '18
+						Available for Freelancing <MobileBreak />{' '}
+						<MobileGray>starting September '18</MobileGray>
 					</Freelance>
 				</div>
 
 				<Description>
 					I'm a self-taught Javascript developer with 7 years of experience
-					building apps that people actually end up using.<br />
+					building apps that people actually end up using.
+					<br />
 					These are the projects that I am most proud of:
 				</Description>
 
