@@ -5,6 +5,7 @@ import ScienceMatters from './previews/ScienceMatters';
 import Onetune from './previews/Onetune';
 import FeatureFyi from './previews/FeatureFyi';
 import MakeSpace from './previews/MakeSpace';
+import AnySticker from './previews/AnySticker';
 
 export default () => {
 	return (
@@ -33,6 +34,18 @@ export default () => {
 					'100+ peer reviewed articles published',
 					'In-browser editor with citation manager',
 					'Endorsed by the European Commission'
+				]}
+			/>
+			<Project
+				timeline="2018–"
+				title="AnySticker"
+				link="https://anysticker.app"
+				feature={<AnySticker />}
+				description="Instagram Story Stickers"
+				accomplishments={[
+					'App for creating custom Instagram stickers',
+					'For iOS and Android',
+					'Initial version built in less than a week'
 				]}
 			/>
 			<Project
