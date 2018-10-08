@@ -58,37 +58,11 @@ const Description = styled.p`
 	line-height: 32px;
 `;
 
-const Freelance = styled.a`
-	display: inline-block;
-	border: 1px solid black;
-	text-transform: uppercase;
-	text-align: center;
-	font-weight: bold;
-	font-family: Roboto Condensed;
-	padding: 8px 12px;
-	margin-bottom: 150px;
-	min-width: 300px;
-	transition: background-color 0.3s, color 0.3s;
-	cursor: pointer;
-	text-decoration: none;
-	color: inherit;
-	&:hover {
-		background: black;
-		color: white;
-	}
-`;
-
 const MobileBreak = styled.div`
 	display: none;
 	${mobile`
 		display: block;
 	`};
-`;
-
-const MobileGray = styled.div`
-	font-size: 0.85em;
-	margin-top: 3px;
-	color: gray;
 `;
 
 class App extends Component {
@@ -123,20 +97,6 @@ class App extends Component {
 						/>
 					</Icons>
 				</Container>
-				<div
-					style={{
-						maxWidth: 500,
-						textAlign: 'center',
-						margin: 'auto',
-						paddingLeft: 20,
-						paddingRight: 20
-					}}
-				>
-					<Freelance href="mailto:hi@jonny.io">
-						Available for Freelancing <MobileBreak />{' '}
-						<MobileGray>starting September '18</MobileGray>
-					</Freelance>
-				</div>
 
 				<Description>
 					I'm a self-taught Javascript developer with 7 years of experience
