@@ -99,7 +99,7 @@ class App extends Component {
 				</Container>
 
 				<Description>
-					I'm a self-taught Javascript developer with 7 years of experience
+					I'm a self-taught JavaScript developer with 7 years of experience
 					building apps that people actually end up using.
 					<br />
 					These are the projects that I am most proud of:
