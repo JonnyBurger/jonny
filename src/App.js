@@ -41,6 +41,9 @@ const Subtitle = styled.div`
 `;
 
 const Icons = styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	a {
 		margin-left: 5px;
 		margin-right: 5px;
@@ -56,6 +59,18 @@ const Description = styled.p`
 	padding-right: 20px;
 	font-family: Roboto Condensed;
 	line-height: 32px;
+`;
+
+const Run = styled.div`
+	width: 40px;
+	height: 40px;
+	background: #333;
+	display: inline-block;
+	border-radius: 50%;
+	padding-top: 4px;
+	box-sizing: border-box;
+	padding-left: 11px;
+	padding-top: 5px;
 `;
 
 const MobileBreak = styled.div`
@@ -95,6 +110,9 @@ class App extends Component {
 							color="#333"
 							style={{width: 40, height: 40}}
 						/>
+						<a href="https://jonny.run">
+							<Run>🏃🏻</Run>
+						</a>
 					</Icons>
 				</Container>
 
