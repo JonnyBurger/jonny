@@ -106,7 +106,7 @@ class App extends Component {
 							style={{width: 40, height: 40}}
 						/>
 						<SocialIcon
-							url="https://www.linkedin.com/feed/"
+							url="https://www.linkedin.com/in/jonny-burger-4115109b/"
 							color="#333"
 							style={{width: 40, height: 40}}
 						/>
