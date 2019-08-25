@@ -20,7 +20,20 @@ export default () => {
 					'Apps for iOS, Android and Web',
 					'Two universites supported, translated into three languages',
 					"The leading app for the University of Zurich - more than 9'000 out of 25'000 students",
-					"Users have rated over 18'000 courses in 6 months"
+					"Users have rated over 40'000 courses"
+				]}
+			/>
+			<Project
+				timeline="2018–"
+				title="AnySticker"
+				link="https://anysticker.app"
+				feature={<AnySticker />}
+				description="Instagram Story Stickers"
+				accomplishments={[
+					'App for creating custom stickers',
+					'WhatsApp and Instagram supported',
+					'iOS and Android app',
+					"Over 20'000 downloads"
 				]}
 			/>
 			<Project
@@ -37,18 +50,6 @@ export default () => {
 				]}
 			/>
 			<Project
-				timeline="2018–"
-				title="AnySticker"
-				link="https://anysticker.app"
-				feature={<AnySticker />}
-				description="Instagram Story Stickers"
-				accomplishments={[
-					'App for creating custom Instagram stickers',
-					'For iOS and Android',
-					'Initial version built in less than a week'
-				]}
-			/>
-			<Project
 				timeline="2013–2015"
 				title="onetune.fm"
 				link="https://onetune.fm"
@@ -60,6 +61,7 @@ export default () => {
 					'Frontpage of Reddit on launch day'
 				]}
 			/>
+
 			<Project
 				timeline="2018–"
 				title="make-space"
@@ -67,7 +69,7 @@ export default () => {
 				feature={<MakeSpace />}
 				description="Free up space on the command line"
 				accomplishments={[
-					'My upcoming flagship open source project',
+					'Upcoming open source project',
 					'Developer-oriented tool for freeing up space',
 					'Downloads and runs with just one command'
 				]}
