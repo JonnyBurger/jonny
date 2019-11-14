@@ -20,7 +20,7 @@ export default () => {
           "Apps for iOS, Android and Web",
           "Two universites supported, translated into three languages",
           "The leading app for the University of Zurich - more than 20'000 downloads",
-          "Users have rated over 50'000 courses"
+          "Users have rated over 40'000 courses"
         ]}
       />
       <Project
