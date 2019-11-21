@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link id="favicon" rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link id="favicon" rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700"
+      rel="stylesheet"
+    />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -23,6 +29,22 @@
     <title>Jonny Burger</title>
   </head>
   <body>
+    <script>
+      const isIOS = Boolean(
+        navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)
+      );
+      const isAndroid = Boolean(/android/i.test(navigator.userAgent));
+
+      if (window.location.origin.includes("app.jonny.io")) {
+        if (isIOS) {
+          window.location.href =
+            "https://itunes.apple.com/sc/app/anysticker/id1427127826?mt=8";
+        } else if (isAndroid) {
+          window.location.href =
+            "https://play.google.com/store/apps/details?id=jonnyburger.anysticker";
+        }
+      }
+    </script>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
