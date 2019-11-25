@@ -37,10 +37,20 @@
 
       if (window.location.origin.includes("app.jonny.io")) {
         if (isIOS) {
-          window.location.replace("swype://app.swype.ch/12333");
-          setTimeout(function() {
-            window.location.replace("https://itunes.apple.com/");
-          }, 2000);
+          (function() {
+            var app = {
+              launchApp: function() {
+                window.location.replace("swype://app.swype.ch/12333");
+                this.timer = setTimeout(this.openWebApp, 1000);
+              },
+
+              openWebApp: function() {
+                window.location.replace("https://itunes.apple.com/");
+              }
+            };
+
+            app.launchApp();
+          })();
         } else if (isAndroid) {
           window.location.href = "https://play.google.com/store/";
         }
