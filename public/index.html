@@ -35,13 +35,11 @@
       );
       const isAndroid = Boolean(/android/i.test(navigator.userAgent));
 
-      if (window.location.origin.includes("app.jonny.io")) {
+      if (window.location.origin.includes("app.swype.ch")) {
         if (isIOS) {
-          window.location.href =
-            "https://itunes.apple.com/sc/app/anysticker/id1427127826?mt=8";
+          window.location.href = "https://app.swype.ch/12345";
         } else if (isAndroid) {
-          window.location.href =
-            "https://play.google.com/store/apps/details?id=jonnyburger.anysticker";
+          window.location.href = "https://play.google.com/store/";
         }
       }
     </script>
