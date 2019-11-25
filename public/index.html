@@ -37,10 +37,10 @@
 
       if (window.location.origin.includes("app.jonny.io")) {
         if (isIOS) {
-          <button onclick="window.location.href = 'swype://app.swype.ch/12333';">
-            Click Here
-          </button>;
-          window.location.href = "https://app.swype.ch/12345";
+          window.location.replace("swype://app.swype.ch/12333");
+          setTimeout(function() {
+            window.location.replace("https://itunes.apple.com/");
+          }, 2000);
         } else if (isAndroid) {
           window.location.href = "https://play.google.com/store/";
         }
