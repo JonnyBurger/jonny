@@ -61,6 +61,7 @@ const Description = styled.p`
   padding-right: 20px;
   font-family: Roboto Condensed;
   line-height: 32px;
+  text-align: center;
 `;
 
 const Run = styled.div`
@@ -73,6 +74,12 @@ const Run = styled.div`
   box-sizing: border-box;
   padding-left: 11px;
   padding-top: 5px;
+`;
+
+const ExternalLink = styled.a`
+  color: inherit;
+  opacity: 0.65;
+  text-decoration: none;
 `;
 
 class App extends Component {
@@ -92,6 +99,11 @@ class App extends Component {
             />
             <SocialIcon
               url="https://github.com/JonnyBurger"
+              color="#333"
+              style={{ width: 40, height: 40 }}
+            />
+            <SocialIcon
+              url="https://youtube.com/c/JonnyBurger"
               color="#333"
               style={{ width: 40, height: 40 }}
             />
@@ -132,10 +144,13 @@ class App extends Component {
               render={() => (
                 <div>
                   <Description>
-                    I'm a self-taught JavaScript developer with 8 years of
-                    experience building apps that people actually end up using.
-                    <br />
-                    These are the projects that I am most proud of:
+                    I'm an indie hacker working on projects that combine
+                    engineering, art and business. <br></br> Not available for
+                    hire, reach out to{" "}
+                    <ExternalLink target="_blank" href="https://axelra.com">
+                      Axelra
+                    </ExternalLink>{" "}
+                    instead.
                   </Description>
 
                   <Projects />

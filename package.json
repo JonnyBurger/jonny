@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://www.jonny.io",
   "dependencies": {
+    "eslint": "^4.10.0",
     "polished": "^2.0.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.3",
