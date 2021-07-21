@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Switch, Route } from "react-router";
 import Projects from "./Projects";
 import Privacy from "./privacy";
+import Hire from "./hire";
 import "./App.css";
 
 const Container = styled.div`
@@ -16,11 +17,13 @@ const Container = styled.div`
   width: 100%;
 `;
 
-const Header = styled.header`
+const Header = styled.a`
   flex-direction: column;
   align-items: center;
   display: flex;
   justify-content: center;
+  color: inherit;
+  text-decoration: none;
 `;
 
 const Heading = styled.h1`
@@ -88,7 +91,7 @@ class App extends Component {
     return (
       <div>
         <Container>
-          <Header>
+          <Header href="/">
             <Heading>Jonny Burger</Heading>
             <Subtitle>Zurich Switzerland</Subtitle>
           </Header>
@@ -142,12 +145,26 @@ class App extends Component {
               }}
             ></Route>
             <Route
+              path="/hire"
+              render={() => {
+                return (
+                  <div>
+                    <Description>Hire</Description>
+                    <Hire />
+                  </div>
+                );
+              }}
+            ></Route>
+            <Route
               render={() => (
                 <div>
                   <Description>
                     I'm an indie hacker working on projects that combine
-                    engineering, art and business. <br></br> Not available for
-                    hire, reach out to{" "}
+                    engineering, art and business. <br></br>{" "}
+                    <ExternalLink href="/hire">
+                      Not available for hire
+                    </ExternalLink>
+                    , reach out to{" "}
                     <ExternalLink target="_blank" href="https://axelra.com">
                       Axelra
                     </ExternalLink>{" "}
