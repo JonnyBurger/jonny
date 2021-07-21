@@ -5,13 +5,14 @@ import { BrowserRouter } from "react-router-dom";
 import { Switch, Route } from "react-router";
 import Projects from "./Projects";
 import Privacy from "./privacy";
+import "./App.css";
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 50vh;
+  min-height: 40vh;
   width: 100%;
 `;
 
@@ -67,7 +68,7 @@ const Description = styled.p`
 const Run = styled.div`
   width: 40px;
   height: 40px;
-  background: #333;
+  background: var(--social-button);
   display: inline-block;
   border-radius: 50%;
   padding-top: 4px;
@@ -94,27 +95,27 @@ class App extends Component {
           <Icons>
             <SocialIcon
               url="mailto:hi@jonny.io"
-              color="#333"
+              color="var(--social-button)"
               style={{ width: 40, height: 40 }}
             />
             <SocialIcon
               url="https://github.com/JonnyBurger"
-              color="#333"
+              color="var(--social-button)"
               style={{ width: 40, height: 40 }}
             />
             <SocialIcon
               url="https://youtube.com/c/JonnyBurger"
-              color="#333"
+              color="var(--social-button)"
               style={{ width: 40, height: 40 }}
             />
             <SocialIcon
               url="https://twitter.com/JNYBGR"
-              color="#333"
+              color="var(--social-button)"
               style={{ width: 40, height: 40 }}
             />
             <SocialIcon
               url="https://www.linkedin.com/in/jonny-burger-4115109b/"
-              color="#333"
+              color="var(--social-button)"
               style={{ width: 40, height: 40 }}
             />
             <a href="https://jonny.run">

@@ -9,7 +9,7 @@ const Container = styled.div`
   background: white;
   display: flex;
   transform: rotateY(10deg);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 3px var(--shadow);
   flex-direction: column;
   overflow: hidden;
 `;

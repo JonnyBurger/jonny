@@ -9,7 +9,7 @@ const Container = styled.div`
   background: white;
   display: flex;
   transform: rotateY(10deg);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 3px var(--shadow);
   flex-direction: column;
   overflow: hidden;
   background: linear-gradient(-45deg, rgb(88, 81, 219), rgb(64, 93, 230));
@@ -55,7 +55,11 @@ export default () => {
                     <span
                       key={character}
                       style={{
-                        color: mix(i / (label.length - 1), "#e95950", "#bc2a8d")
+                        color: mix(
+                          i / (label.length - 1),
+                          "#e95950",
+                          "#bc2a8d"
+                        ),
                       }}
                     >
                       {character}
@@ -69,23 +73,23 @@ export default () => {
               <AnimateChildren>
                 <Ball
                   style={{
-                    background: "linear-gradient(to right, #e95950, #bc2a8d)"
+                    background: "linear-gradient(to right, #e95950, #bc2a8d)",
                   }}
                 />
                 <Ball
                   style={{
-                    background: "linear-gradient(to right, #74b9ff, #55efc4)"
+                    background: "linear-gradient(to right, #74b9ff, #55efc4)",
                   }}
                 />
                 <Ball
                   style={{
-                    background: "linear-gradient(to right, #e95950, #fccc63)"
+                    background: "linear-gradient(to right, #e95950, #fccc63)",
                   }}
                 />
                 <Ball
                   style={{
                     background:
-                      "linear-gradient(to right, rgb(131, 192, 98), rgb(152, 215, 122))"
+                      "linear-gradient(to right, rgb(131, 192, 98), rgb(152, 215, 122))",
                   }}
                 />
               </AnimateChildren>
