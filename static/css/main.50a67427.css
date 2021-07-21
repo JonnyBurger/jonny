@@ -1,0 +1,2 @@
+body{margin:0;padding:0;font-family:sans-serif}:root{--background:#fff;--text:#000;--social-button:#333;--shadow:rgba(0,0,0,.4);background-color:var(--background);color:var(--text);-webkit-transition:background-color color .3s;-o-transition:.3s background-color color;transition:background-color color .3s}@media (prefers-color-scheme:dark){:root{--background:#222;--text:#fff;--social-button:#ccc;--shadow:hsla(0,0%,100%,.4)}}
+/*# sourceMappingURL=main.50a67427.css.map*/

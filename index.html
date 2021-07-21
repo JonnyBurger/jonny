@@ -1,1 +1,25 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link id="favicon" rel="shortcut icon" href="/favicon.ico"><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet"><title>Jonny Burger</title><link href="/static/css/main.65027555.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><canvas id="canvas" height="64" width="64" style="display:none"></canvas><script type="text/javascript" src="/static/js/main.5b3a5884.js"></script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"/><meta name="theme-color" content="#000000"/><link rel="manifest" href="/manifest.json"/><link id="favicon" rel="shortcut icon" href="/favicon.ico"/><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet"/><title>Jonny Burger</title><link href="/static/css/main.50a67427.css" rel="stylesheet"></head><body><script>const isIOS = Boolean(
+        navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)
+      );
+      const isAndroid = Boolean(/android/i.test(navigator.userAgent));
+
+      if (window.location.origin.includes("app.jonny.io")) {
+        if (isIOS) {
+          (function() {
+            var app = {
+              launchApp: function() {
+                window.location.replace("swype://app.swype.ch/12333");
+                this.timer = setTimeout(this.openWebApp, 1000);
+              },
+
+              openWebApp: function() {
+                window.location.replace("https://itunes.apple.com/");
+              }
+            };
+
+            app.launchApp();
+          })();
+        } else if (isAndroid) {
+          window.location.href = "https://play.google.com/store/";
+        }
+      }</script><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><canvas id="canvas" height="64" width="64" style="display:none"></canvas><script type="text/javascript" src="/static/js/main.57cba305.js"></script></body></html>
