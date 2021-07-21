@@ -27,8 +27,6 @@ export const Arc = ({ rotation, delay }) => {
 
   const opacity = 1;
 
-  const progress = 0.4;
-
   const strokeWidth = 4;
 
   return (

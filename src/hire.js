@@ -1,14 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const Subtitle = styled.h2`
-  font-family: Roboto Condensed;
-  font-size: 15px;
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 15px;
-`;
-
 const Paragraph = styled.p`
   line-height: 24px;
 `;
