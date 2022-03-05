@@ -15,7 +15,7 @@ export default () => {
         description="Programmatic video creation"
         accomplishments={[
           "Developer tool for creating videos programmatically",
-          "7'000+ Github stars",
+          "10'000+ Github stars",
           "Community of hundreds of Remotion developers",
         ]}
       />

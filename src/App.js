@@ -117,6 +117,11 @@ class App extends Component {
               style={{ width: 40, height: 40 }}
             />
             <SocialIcon
+              url="https://instagram.com/jonnyburger"
+              color="var(--social-button)"
+              style={{ width: 40, height: 40 }}
+            />
+            <SocialIcon
               url="https://www.linkedin.com/in/jonny-burger-4115109b/"
               color="var(--social-button)"
               style={{ width: 40, height: 40 }}
