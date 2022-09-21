@@ -98,32 +98,32 @@ class App extends Component {
           <Icons>
             <SocialIcon
               url="mailto:hi@jonny.io"
-              color="var(--social-button)"
+              bgColor="var(--social-button)"
               style={{ width: 40, height: 40 }}
             />
             <SocialIcon
               url="https://github.com/JonnyBurger"
-              color="var(--social-button)"
+              bgColor="var(--social-button)"
               style={{ width: 40, height: 40 }}
             />
             <SocialIcon
               url="https://youtube.com/c/JonnyBurger"
-              color="var(--social-button)"
+              bgColor="var(--social-button)"
               style={{ width: 40, height: 40 }}
             />
             <SocialIcon
               url="https://twitter.com/JNYBGR"
-              color="var(--social-button)"
+              bgColor="var(--social-button)"
               style={{ width: 40, height: 40 }}
             />
             <SocialIcon
               url="https://instagram.com/jonnyburger"
-              color="var(--social-button)"
+              bgColor="var(--social-button)"
               style={{ width: 40, height: 40 }}
             />
             <SocialIcon
               url="https://www.linkedin.com/in/jonny-burger-4115109b/"
-              color="var(--social-button)"
+              bgColor="var(--social-button)"
               style={{ width: 40, height: 40 }}
             />
             <a href="https://jonny.run">
@@ -164,18 +164,19 @@ class App extends Component {
               render={() => (
                 <div>
                   <Description>
-                    I'm an indie hacker working on projects that combine
-                    engineering, art and business. <br></br>{" "}
+                    I am the Chief Hacker at{" "}
+                    <ExternalLink href="https://remotion.dev">
+                      Remotion
+                    </ExternalLink>
+                    , a tool for making videos programmatically!
+                    <br></br>{" "}
                     <ExternalLink href="/hire">
                       Not available for hire
                     </ExternalLink>
-                    , reach out to{" "}
-                    <ExternalLink target="_blank" href="https://axelra.com">
-                      Axelra
+                    <ExternalLink href="/hire">
+                      , see here instead.
                     </ExternalLink>{" "}
-                    instead.
                   </Description>
-
                   <Projects />
                 </div>
               )}

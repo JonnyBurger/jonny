@@ -13,18 +13,35 @@ const ExternalLink = styled.a`
 
 export default () => {
   return (
-    <div style={{ width: 800, margin: "auto" }}>
+    <div
+      style={{
+        maxWidth: 800,
+        paddingLeft: 28,
+        paddingRight: 28,
+        margin: "auto",
+      }}
+    >
       <Paragraph>
         Thank you for your interest! <strong>I am not for hire</strong>. I am
-        focused on <ExternalLink href="/">my own projects</ExternalLink> and
-        don't want to change it anytime soon.
+        focused on <ExternalLink href="/">Remotion</ExternalLink> and don't want
+        to change it anytime soon.
         <br />
-        <br /> I do work part-time at{" "}
+        <br />
+        If you want to realize your Remotion project, find a freelancer on our{" "}
+        <ExternalLink href="https://remotion.dev/experts">
+          Experts
+        </ExternalLink>{" "}
+        page.
+        <br />
+        <br /> For other types of projects, I recommend{" "}
         <ExternalLink target="_blank" href="https://axelra.com">
           Axelra
+        </ExternalLink>{" "}
+        and{" "}
+        <ExternalLink target="_blank" href="https://foronered.com">
+          For One Red
         </ExternalLink>
-        . We are a strong team based in Zurich mainly focused on React Native.
-        Please direct your serious inquiries directly to Axelra.
+        . Please direct your serious inquiries directly to them.
       </Paragraph>
     </div>
   );

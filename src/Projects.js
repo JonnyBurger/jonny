@@ -15,16 +15,16 @@ export default () => {
         description="Programmatic video creation"
         accomplishments={[
           "Developer tool for creating videos programmatically",
-          "10'000+ Github stars",
+          "14'000+ Github stars",
           "Community of hundreds of Remotion developers",
         ]}
       />
       <Project
-        timeline="2018–"
+        timeline="2018–2022"
         title="AnySticker"
-        link="https://anysticker.app"
+        link="https://anysticker.com"
         feature={<AnySticker />}
-        description="Instagram Story Stickers"
+        description="WhatsApp and Instagram stickers"
         accomplishments={[
           "App for creating custom WhatsApp and Instagram stickers",
           "iOS and Android app",
@@ -32,13 +32,13 @@ export default () => {
         ]}
       />
       <Project
-        timeline="2016–"
+        timeline="2016–2022"
         title="Bestande"
         link="https://bestande.ch"
         feature={<Bestande />}
         description="Student app for University of Zurich"
         accomplishments={[
-          "The leading app for the University of Zurich - more than 20'000 downloads",
+          "Student app for the University of Zurich - more than 20'000 downloads",
           "Apps for iOS, Android and Web",
           "60'000 course ratings and 50'000 chat messages",
         ]}
