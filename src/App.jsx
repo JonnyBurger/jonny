@@ -5,7 +5,6 @@ import { BrowserRouter } from "react-router-dom";
 import { Switch, Route } from "react-router";
 import Projects from "./Projects";
 import Privacy from "./privacy";
-import Hire from "./hire";
 import "./App.css";
 
 const Container = styled.div`
@@ -150,32 +149,17 @@ class App extends Component {
               }}
             ></Route>
             <Route
-              path="/hire"
-              render={() => {
-                return (
-                  <div>
-                    <Description>Hire</Description>
-                    <Hire />
-                  </div>
-                );
-              }}
-            ></Route>
-            <Route
               render={() => (
                 <div>
                   <Description>
-                    I am the Chief Hacker at{" "}
-                    <ExternalLink href="https://remotion.dev">
-                      Remotion
+                    Since 2021, my mission is to explore the world of video creation
+                    and explode it into small, programmable pieces.
+                  </Description>
+                  <Description>
+                    Not available for hire.{" "}
+                    <ExternalLink href="https://remotion.dev/investors">
+                      Not looking for investors.
                     </ExternalLink>
-                    , a tool for making videos programmatically!
-                    <br></br>{" "}
-                    <ExternalLink href="/hire">
-                      Not available for hire
-                    </ExternalLink>
-                    <ExternalLink href="/hire">
-                      , see here instead.
-                    </ExternalLink>{" "}
                   </Description>
                   <Projects />
                 </div>
