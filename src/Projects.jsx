@@ -14,7 +14,7 @@ export default () => {
         accomplishments={[
           "Developer tool for creating videos programmatically",
           "58'000+ Github stars",
-          "Community of hundreds of Remotion developers",
+          "Community of thousands of Remotion developers",
         ]}
       />
     </div>
